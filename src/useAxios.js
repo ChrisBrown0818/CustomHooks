@@ -15,7 +15,10 @@ const [state, setState] = useState([]);
 
 const changeState = async ( endPoint = "" ) => {
   
-   url = (endPoint  == "pikachu") ? url : `${url}${endPoint}`;
+   //url = (endPoint  == "pikachu") ? url : `${url}${endPoint}`;
+   if(key === "pokemon"){
+    url = (endPoint === "bulbasaur") ? url : `${url}${endPoint}`;
+   }
    
    
    //previous attempt
